@@ -1,11 +1,16 @@
-Download the full example files:
+This package performs the Bayesian model selection on different types of FCS data, 
+including multiple TACF curves, single intensity traces, and imaging FCS data. Usage of the package 
+for each data type is demonstrated in the scripts 'run_FCS_bayes_multi_curves.m'
+, 'run_FCS_bayes_single_trace.m', and 'run_imagingFCS_bayes.m'. The FCS data sets for 
+the demonstrations can be downloaded from:
+
 http://fcs-bayes.org/examples/examples.zip
 
-This package performs the Bayesian model selection on different types of FCS data, 
-including multiple TACF curves and a single intensity trace, using the provided MATLAB package at the 
-download page. The FCS data sets for the following examples can be downloaded here. Unpack the file and 
-put the folder 'example' in the package folder 'FCS_Bayes_package'.
+To run the demonstration, unpack the folder 'example' in the same folder of the package and run the MATLAB scripts. 
 
+This package was tested on MATLAB R2011a with Statistics Toolbox and Image Processing Toolbox installed.
+
+###################################################################
 Example 1 Analysis of multiple TACF curves without raw intensity traces
 
 Proper calculation of model probabilities requires incorporating the noise covariance matrix. 
@@ -25,6 +30,7 @@ non-singular, but the minimum required number of TACFs increases as the number o
 When the raw photon-count trace or photon arrival time is available, the noise in a single TACF can be 
 calculated from its underlying photon-count products (see the paper for details).
 
+######################################################################################
 Example 2 Analysis of raw intensity traces
 
 Example files 'FCS_8int_vary_Dr_D2=#.mat' contains a series simulated photon count traces of two-component 
@@ -41,6 +47,7 @@ instead of 'compute_ACF2' for computing TACF.
 
 (3) Running the Bayesian model selection on the computed TACF curves, same as the analysis of multiple curves.
 
+##############################################################################################
 Example 3 Analysis of fluorescence movies
 
 For imaging FCS in which each pixel acts as a single detector, the intensity trace at each pixel may be 
