@@ -71,4 +71,4 @@ curve is used to estimate the noise.
 (3) Running the Bayesian model selection on the computed TACF curves and generating the map of model 
 probabilities, the map and histogram of diffusion coefficients.
 
- 
+For more information, visit http://fcs-bayes.org
