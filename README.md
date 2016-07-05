@@ -1,4 +1,4 @@
-This package performs the Bayesian model selection on different types of FCS data, 
+This program performs the Bayesian model selection on different types of FCS data, 
 including multiple TACF curves, single intensity traces, and imaging FCS data. Usage of the package 
 for each data type is demonstrated in the scripts 'run_FCS_bayes_multi_curves.m'
 , 'run_FCS_bayes_single_trace.m', and 'run_imagingFCS_bayes.m'. The FCS data sets for 
